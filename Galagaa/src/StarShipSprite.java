@@ -15,7 +15,13 @@ public class StarShipSprite extends Sprite {
 		if ((dx < 0) && (x < 10)) {
 			return;
 		}
-		if ((dx > 0) && (x > 800)) {
+		if ((dx > 0) && (x > 730)) {
+			return;
+		}
+		if ((dy < 0) && (y < 10)) {
+			return;
+		}
+		if ((dy > 0) && (y > 500)) {
 			return;
 		}
 		super.move();
@@ -26,5 +32,6 @@ public class StarShipSprite extends Sprite {
 		if (other instanceof AlienSprite) {
 			game.endGame();
 		}
+		
 	}
 }

@@ -1,4 +1,5 @@
 import java.awt.Image;
+import java.awt.event.KeyEvent;
 
 public class AlienSprite extends Sprite {
 	private GalagaGame game;
@@ -6,7 +7,7 @@ public class AlienSprite extends Sprite {
 	public AlienSprite(GalagaGame game, Image image, int x, int y) {
 		super(image, x, y);
 		this.game = game;
-		dx = -3;
+		dx = -1;
 	}
 
 	@Override
@@ -17,6 +18,7 @@ public class AlienSprite extends Sprite {
 			if (y > 600) {
 				game.endGame();
 			}
+			
 		}
 		super.move();
 	}

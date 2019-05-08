@@ -58,7 +58,7 @@ public class Sprite {
 	}
 
 	// x를 반환한다.
-	public int getX() {
+	public int getX() { 
 		return x;
 	}
 
